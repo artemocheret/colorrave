@@ -11,6 +11,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./src/styles/styles.css" />
     <link rel="stylesheet" href="./src/styles/reset.css" />
   </head>
@@ -40,7 +46,7 @@
           <img src="./src/images/logo.png" alt="logo" class="hero-img" />
         </div>
         <div class="hero-photo">
-          <img src="./src/images/С&R.png" alt="cr" class="hero-img" />
+          <img src="./src/images/С&R.svg" alt="cr" class="hero-img" />
         </div>
         <h1 class="hero-title">ColoRawe</h1>
         <h2 class="hero-subtitle">Your dream Nike</h2>
@@ -134,11 +140,44 @@
       </section>
       <section class="order">
         <h1 class="order-title">Order</h1>
-        <input type="text" /><input type="text" /><input type="text" /><input
-          type="text"
-        />
+        <form action="" class="order-form">
+          <div class="order-div">
+            <input type="text" placeholder="Write your email" />
+            <button class="order-button">Confirm</button>
+          </div>
+          <div class="order-div">
+            <input type="text" placeholder="Your Country" />
+          </div>
+          <div class="order-div">
+            <input type="text" placeholder="Your City" />
+          </div>
+          <div class="order-div">
+            <input type="text" placeholder="Your Adress" />
+          </div>
+        </form>
       </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <ul class="footer-list">
+        <li class="footer-item">Have a question?</li>
+        <li class="footer-item">Have a proposal for cooperation?</li>
+        <li class="footer-item">Advertising questions?</li>
+      </ul>
+      <ul class="footer-list">
+        <li class="footer-item">ColoRawe_support@gmail.com</li>
+        <li class="footer-item">ColoRawe_Cooperation@gmail.com</li>
+        <li class="footer-item">ColoRawe_Advertising@gmail.com</li>
+      </ul>
+      <div class="footer-div">
+        <p class="footer-text">2022 ColoRawe @All rights reserved</p>
+        <p class="footer-text">United States</p>
+      </div>
+      <div class="footer-photo">
+        <img src="./src/images/logo.png" alt="logo" />
+      </div>
+      <div class="footer-photo">
+        <img src="./src/images/С&R.svg" alt="cr" />
+      </div>
+    </footer>
   </body>
 </html>
