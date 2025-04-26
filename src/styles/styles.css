@@ -5,11 +5,134 @@
   --color-bg-button: #8e32c6;
   --color-bg-header: #012d63;
   --color-bg-footer: #021635;
-  --color-text-button: #8d8d8d;
+  --color-text-line: #d8d8d8;
+  --font-family-primary: "Roboto", sans-serif;
+  --font-family-secondary: "Playfair Display", serif;
 }
 
 .body {
   font-size: 24px;
-  background-color: var(--color-text-primary);
+  color: var(--color-text-primary);
   font-weight: 400;
+  font-family: var(--font-family-primary);
+}
+
+.container {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.header {
+  background-color: var(--color-bg-header);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: flex;
+  gap: 29px;
+  align-items: center;
+}
+
+.nav-item {
+  font-weight: 300;
+  color: var(--color-text-navigation);
+}
+
+.hero {
+  background-image: url(../images/background.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 105px;
+}
+
+.hero-logo {
+  padding-top: 94px;
+}
+
+.hero-title {
+  font-family: var(--font-family-secondary);
+  font-size: 144px;
+  padding-bottom: 60px;
+}
+
+.hero-subtitle {
+  font-family: var(--font-family-secondary);
+  font-size: 72px;
+  padding-bottom: 12px;
+}
+
+.hero-text {
+  font-size: 18px;
+  padding-bottom: 41px;
+  max-width: 508px;
+}
+
+.hero-button {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 61px;
+  padding-right: 61px;
+  background-color: var(--color-bg-button);
+  border-radius: 10px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--color-bg-button);
+  margin-bottom: 183px;
+}
+
+.advantages {
+  border: 5px solid var(--color-bg-button);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-image: linear-gradient();
+  margin-bottom: 105px;
+}
+
+.advantages-list {
+  display: flex;
+  gap: 145px;
+  align-items: center;
+}
+
+.advantages-title {
+  font-family: var(--font-family-secondary);
+  font-size: 36px;
+}
+
+.reviews-title {
+  font-size: 48px;
+  font-family: var(--font-family-secondary);
+  text-align: center;
+  padding-bottom: 24px;
+}
+
+.reviews-list {
+  display: flex;
+  align-items: center;
+  gap: 93px;
+}
+
+.reviews-item {
+  margin-bottom: 114px;
+  max-width: 255px;
+}
+
+.user-date {
+  font-size: 14px;
+  color: var(--color-text-line);
+}
+
+.user-name {
+  font-size: 14px;
+}
+
+.user-year {
+  font-size: 12px;
+  color: var(--color-text-line);
 }

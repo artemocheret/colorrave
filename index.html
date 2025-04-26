@@ -22,161 +22,183 @@
   </head>
   <body>
     <header class="header">
-      <a href="./index.html" class="logo"
-        ><img src="./src/images/logo.png" alt="logo"
-      /></a>
-      <nav class="nav">
-        <ul class="nav-list">
-          <li class="nav-item">Main page</li>
-          <li class="nav-item">Benefits</li>
-          <li class="nav-item">Advantages</li>
-          <li class="nav-item">Reviews</li>
-          <li class="nav-item">Contacts</li>
-          <li class="nav-item">Order</li>
-        </ul>
+      <div class="header-container container">
+        <a href="./index.html" class="logo"
+          ><img src="./src/images/logo.png" alt="logo"
+        /></a>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="" class="nav-link">Main page</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Benefits</a></li>
+            <li class="nav-item">
+              <a href="#advantages" class="nav-link">Advantages</a>
+            </li>
+            <li class="nav-item">
+              <a href="#reviews" class="nav-link">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a href="#reviews" class="nav-link">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a href="#order" class="nav-link">Order</a>
+            </li>
+          </ul>
+        </nav>
         <ul class="language-list">
-          <li class="language">Ua</li>
-          <li class="language">Eng</li>
+          <li class="language-item">Ua</li>
+          <li class="language-item">Eng</li>
         </ul>
-      </nav>
+      </div>
     </header>
     <main>
       <section class="hero">
-        <div class="hero-photo">
-          <img src="./src/images/logo.png" alt="logo" class="hero-img" />
+        <div class="hero-container container">
+          <div class="hero-logo">
+            <img src="./src/images/logo.png" alt="logo" class="hero-img" />
+          </div>
+          <div class="hero-photo">
+            <img src="./src/images/С&R.svg" alt="cr" class="hero-img" />
+          </div>
+          <h1 class="hero-title">ColoRawe</h1>
+          <h2 class="hero-subtitle">Your dream Nike</h2>
+          <p class="hero-text">
+            On this site you can find custom Nike sneakers of your dreams. The
+            original company caт`t create such beautiful sneakers as we do. Good
+            luck finding your way in the world of custom sneakers.
+          </p>
+          <button class="hero-button">Buy my Nike</button>
         </div>
-        <div class="hero-photo">
-          <img src="./src/images/С&R.svg" alt="cr" class="hero-img" />
+      </section>
+      <section class="advantages" id="advantages">
+        <div class="advantages-container container">
+          <ul class="advantages-list">
+            <li class="advantages-item">
+              <h2 class="advantages-title">Premium Quality</h2>
+              <img
+                src="./src/images/stars.png"
+                alt="stars"
+                class="advantages-img"
+              />
+            </li>
+            <li class="advantages-item">
+              <h2 class="advantages-title">Indelible paint</h2>
+              <img
+                src="./src/images/colors.png"
+                alt="colors"
+                class="advantages-img"
+              />
+            </li>
+            <li class="advantages-item">
+              <h2 class="advantages-title">Fast shipping</h2>
+              <img
+                src="./src/images/truck.png"
+                alt="truck"
+                class="advantages-img"
+              />
+            </li>
+          </ul>
         </div>
-        <h1 class="hero-title">ColoRawe</h1>
-        <h2 class="hero-subtitle">Your dream Nike</h2>
-        <p class="hero-text">
-          On this site you can find custom Nike sneakers of your dreams. The
-          original company caт`t create such beautiful sneakers as we do. Good
-          luck finding your way in the world of custom sneakers.
-        </p>
-        <button class="hero-button">Buy my Nike</button>
       </section>
-      <section class="advantages">
-        <ul class="advantages-list">
-          <li class="advantages-item">
-            <h2 class="advantages-title">Premium Quality</h2>
-            <img
-              src="./src/images/stars.png"
-              alt="stars"
-              class="advantages-img"
-            />
-          </li>
-          <li class="advantages-item">
-            <h2 class="advantages-title">Indelible paint</h2>
-            <img
-              src="./src/images/colors.png"
-              alt="colors"
-              class="advantages-img"
-            />
-          </li>
-          <li class="advantages-item">
-            <h2 class="advantages-title">Fast shipping</h2>
-            <img
-              src="./src/images/truck.png"
-              alt="truck"
-              class="advantages-img"
-            />
-          </li>
-          <li class="advantages-item"></li>
-          <li class="advantages-item"></li>
-        </ul>
+      <section class="reviews" id="reviews">
+        <div class="reviews-container container">
+          <h1 class="reviews-title">Reviews</h1>
+          <ul class="reviews-list">
+            <li class="reviews-item">
+              <article class="user">
+                <p class="user-text">
+                  Sneakers are very comfortable and well painted, nothing has
+                  worn off in a year.
+                </p>
+                <p class="user-date">25.11</p>
+                <div class="user-photo">
+                  <img src="./src/images/man.png" alt="man" class="user-img" />
+                </div>
+                <h2 class="user-name">John Teylor</h2>
+                <p class="user-year">With us from 2018</p>
+              </article>
+            </li>
+            <li class="reviews-item">
+              <article class="user">
+                <p class="user-text">
+                  I'm very happy with this color scheme. They match all my
+                  clothes.
+                </p>
+                <p class="user-date">05.01</p>
+                <div class="user-photo">
+                  <img
+                    src="./src/images/woman.png"
+                    alt="woman"
+                    class="user-img"
+                  />
+                </div>
+                <h2 class="user-name">Elizabeth Garsia</h2>
+                <p class="user-year">With us from 2020</p>
+              </article>
+            </li>
+            <li class="reviews-item">
+              <article class="user">
+                <p class="user-text">
+                  Just right if you need to go to a party. I use them actively,
+                  the paint is super.
+                </p>
+                <p class="user-date">18.06</p>
+                <div class="user-photo">
+                  <img
+                    src="./src/images/man2.png"
+                    alt="man2"
+                    class="user-img"
+                  />
+                </div>
+                <h2 class="user-name">Tom Maquare</h2>
+                <p class="user-year">With us from 2019</p>
+              </article>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section class="reviews">
-        <h1 class="reviews-title">Reviews</h1>
-        <ul class="reviews-list">
-          <li class="reviews-item">
-            <article class="user">
-              <p class="user-text">
-                Sneakers are very comfortable and well painted, nothing has worn
-                off in a year.
-              </p>
-              <p class="user-date">25.11</p>
-              <div class="user-photo">
-                <img src="./src/images/man.png" alt="man" class="user-img" />
-              </div>
-              <h2 class="user-name">John Teylor</h2>
-              <p class="user-year">With us from 2018</p>
-            </article>
-          </li>
-          <li class="reviews-item">
-            <article class="user">
-              <p class="user-text">
-                I'm very happy with this color scheme. They match all my
-                clothes.
-              </p>
-              <p class="user-date">05.01</p>
-              <div class="user-photo">
-                <img
-                  src="./src/images/woman.png"
-                  alt="woman"
-                  class="user-img"
-                />
-              </div>
-              <h2 class="user-name">Elizabeth Garsia</h2>
-              <p class="user-year">With us from 2020</p>
-            </article>
-          </li>
-          <li class="reviews-item">
-            <article class="user">
-              <p class="user-text">
-                Just right if you need to go to a party. I use them actively,
-                the paint is super.
-              </p>
-              <p class="user-date">18.06</p>
-              <div class="user-photo">
-                <img src="./src/images/man2.png" alt="man2" class="user-img" />
-              </div>
-              <h2 class="user-name">Tom Maquare</h2>
-              <p class="user-year">With us from 2019</p>
-            </article>
-          </li>
-        </ul>
-      </section>
-      <section class="order">
-        <h1 class="order-title">Order</h1>
-        <form action="" class="order-form">
-          <div class="order-div">
-            <input type="text" placeholder="Write your email" />
-            <button class="order-button">Confirm</button>
-          </div>
-          <div class="order-div">
-            <input type="text" placeholder="Your Country" />
-          </div>
-          <div class="order-div">
-            <input type="text" placeholder="Your City" />
-          </div>
-          <div class="order-div">
-            <input type="text" placeholder="Your Adress" />
-          </div>
-        </form>
+      <section class="order" id="order">
+        <div class="order-container container">
+          <h1 class="order-title">Order</h1>
+          <form action="" class="order-form">
+            <div class="order-div">
+              <input type="text" placeholder="Write your email" />
+              <button class="order-button">Confirm</button>
+            </div>
+            <div class="order-div">
+              <input type="text" placeholder="Your Country" />
+            </div>
+            <div class="order-div">
+              <input type="text" placeholder="Your City" />
+            </div>
+            <div class="order-div">
+              <input type="text" placeholder="Your Adress" />
+            </div>
+          </form>
+        </div>
       </section>
     </main>
     <footer class="footer">
-      <ul class="footer-list">
-        <li class="footer-item">Have a question?</li>
-        <li class="footer-item">Have a proposal for cooperation?</li>
-        <li class="footer-item">Advertising questions?</li>
-      </ul>
-      <ul class="footer-list">
-        <li class="footer-item">ColoRawe_support@gmail.com</li>
-        <li class="footer-item">ColoRawe_Cooperation@gmail.com</li>
-        <li class="footer-item">ColoRawe_Advertising@gmail.com</li>
-      </ul>
-      <div class="footer-div">
-        <p class="footer-text">2022 ColoRawe @All rights reserved</p>
-        <p class="footer-text">United States</p>
-      </div>
-      <div class="footer-photo">
-        <img src="./src/images/logo.png" alt="logo" />
-      </div>
-      <div class="footer-photo">
-        <img src="./src/images/С&R.svg" alt="cr" />
+      <div class="footer-container container">
+        <ul class="footer-list">
+          <li class="footer-item">Have a question?</li>
+          <li class="footer-item">Have a proposal for cooperation?</li>
+          <li class="footer-item">Advertising questions?</li>
+        </ul>
+        <ul class="footer-list" id="contacts">
+          <li class="footer-item">ColoRawe_support@gmail.com</li>
+          <li class="footer-item">ColoRawe_Cooperation@gmail.com</li>
+          <li class="footer-item">ColoRawe_Advertising@gmail.com</li>
+        </ul>
+        <div class="footer-div">
+          <p class="footer-text">2022 ColoRawe @All rights reserved</p>
+          <p class="footer-text">United States</p>
+        </div>
+        <div class="footer-photo">
+          <img src="./src/images/logo.png" alt="logo" />
+        </div>
+        <div class="footer-photo">
+          <img src="./src/images/С&R.svg" alt="cr" />
+        </div>
       </div>
     </footer>
   </body>
