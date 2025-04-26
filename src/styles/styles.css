@@ -136,3 +136,40 @@
   font-size: 12px;
   color: var(--color-text-line);
 }
+
+.order {
+  background-image: url(../images/backgroundflower.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order-title {
+  font-size: 48px;
+  text-align: center;
+  font-family: var(--font-family-secondary);
+  padding-bottom: 33px;
+}
+
+.order-form {
+  padding-bottom: 19px;
+}
+
+.order-field {
+  padding: 12px 25px 13px 25px;
+  border-radius: 50px;
+}
+
+.order-button {
+  margin-bottom: 37px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 48px;
+  padding-right: 49px;
+  background-color: var(--color-bg-button);
+  border-radius: 16px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--color-bg-button);
+}
