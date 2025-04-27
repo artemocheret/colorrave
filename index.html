@@ -45,8 +45,8 @@
           </ul>
         </nav>
         <ul class="language-list">
-          <li class="language-item">Ua</li>
-          <li class="language-item">Eng</li>
+          <li class="language-item-ua">Ua</li>
+          <li class="language-item-eng">Eng</li>
         </ul>
       </div>
     </header>
@@ -82,11 +82,13 @@
             </li>
             <li class="advantages-item">
               <h2 class="advantages-title">Indelible paint</h2>
-              <img
-                src="./src/images/colors.png"
-                alt="colors"
-                class="advantages-img"
-              />
+              <div class="advantages-photo">
+                <img
+                  src="./src/images/colors.png"
+                  alt="colors"
+                  class="advantages-img"
+                />
+              </div>
             </li>
             <li class="advantages-item">
               <h2 class="advantages-title">Fast shipping</h2>
@@ -160,28 +162,28 @@
         <div class="order-container container">
           <h1 class="order-title">Order</h1>
           <form action="" class="order-form">
-            <div class="order-div">
+            <div class="order-field">
               <input
                 type="text"
-                class="order-field"
+                class="order-input"
                 placeholder="Write your email"
               />
               <button class="field-button">Confirm</button>
             </div>
-            <div class="order-div">
+            <div class="order-field">
               <input
                 type="text"
-                class="order-field"
+                class="order-input"
                 placeholder="Your Country"
               />
             </div>
-            <div class="order-div">
-              <input type="text" class="order-field" placeholder="Your City" />
+            <div class="order-field">
+              <input type="text" class="order-input" placeholder="Your City" />
             </div>
-            <div class="order-div">
+            <div class="order-field">
               <input
                 type="text"
-                class="order-field"
+                class="order-input"
                 placeholder="Your Adress"
               />
             </div>

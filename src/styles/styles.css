@@ -10,7 +10,7 @@
   --font-family-secondary: "Playfair Display", serif;
 }
 
-.body {
+body {
   font-size: 24px;
   color: var(--color-text-primary);
   font-weight: 400;
@@ -46,6 +46,25 @@
   color: var(--color-text-navigation);
 }
 
+.language-list {
+  display: flex;
+  gap: 15px;
+}
+
+.language-item-ua {
+  font-weight: 300;
+  color: #dcdcdc;
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.language-item-eng {
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.nav-item:hover {
+  color: var(--color-text-primary);
+}
+
 .hero {
   background-image: url(../images/background.webp);
   background-repeat: no-repeat;
@@ -55,6 +74,11 @@
 
 .hero-logo {
   padding-top: 94px;
+}
+
+.hero-photo {
+  margin-top: -15px;
+  margin-left: 20px;
 }
 
 .hero-title {
@@ -90,7 +114,7 @@
 .advantages {
   border: 5px solid var(--color-bg-button);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  background-image: linear-gradient();
+  background-image: linear-gradient(left top, 8e32c6);
   margin-bottom: 105px;
 }
 
@@ -100,9 +124,17 @@
   align-items: center;
 }
 
+.advantages-item:nth-child(even) .advantages-photo {
+  order: -1;
+}
+
 .advantages-title {
   font-family: var(--font-family-secondary);
   font-size: 36px;
+}
+
+.reviews {
+  border: 2px solid var(--color-text-primary);
 }
 
 .reviews-title {
@@ -151,6 +183,7 @@
   text-align: center;
   font-family: var(--font-family-secondary);
   padding-bottom: 33px;
+  padding-top: 20px;
 }
 
 .order-form {
@@ -172,4 +205,8 @@
   border-radius: 16px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   border: 1px solid var(--color-bg-button);
+}
+
+.footer {
+  background-color: var(--color-bg-footer);
 }
