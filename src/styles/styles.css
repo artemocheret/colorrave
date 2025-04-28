@@ -114,7 +114,12 @@ body {
 .advantages {
   border: 5px solid var(--color-bg-button);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  background-image: linear-gradient(left top, 8e32c6);
+  background-image: linear-gradient(
+    to bottom right,
+    #9a76f9 30px,
+    #021635 70px,
+    #00e5e6 100px
+  );
   margin-bottom: 105px;
 }
 
@@ -122,6 +127,13 @@ body {
   display: flex;
   gap: 145px;
   align-items: center;
+}
+
+.advantages-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-bottom: 19px;
 }
 
 .advantages-item:nth-child(even) .advantages-photo {
@@ -153,6 +165,22 @@ body {
 .reviews-item {
   margin-bottom: 114px;
   max-width: 255px;
+}
+
+.user {
+  background-image: linear-gradient(
+    to bottom right,
+    #00e5e6,
+    #00a8f7,
+    #9a76f9,
+    #cc5ec2
+  );
+  border-radius: 15px;
+  box-shadow: 0 30px 0 -13px #533978, 0 14px 0 -5px #7b54b2;
+  padding-top: 49px;
+  padding-bottom: 29px;
+  padding-right: 14px;
+  padding-left: 13px;
 }
 
 .user-date {
@@ -190,7 +218,7 @@ body {
   padding-bottom: 19px;
 }
 
-.order-field {
+.order-input {
   padding: 12px 25px 13px 25px;
   border-radius: 50px;
 }
