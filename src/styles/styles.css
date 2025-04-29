@@ -114,12 +114,12 @@ body {
 .advantages {
   border: 5px solid var(--color-bg-button);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  background-image: linear-gradient(
-    to bottom right,
-    #9a76f9 30px,
-    #021635 70px,
-    #00e5e6 100px
-  );
+  background-image: radial-gradient(
+      ellipse at bottom right,
+      #9a76f9 30%,
+      #9976f900 20%
+    ),
+    radial-gradient(ellipse at top left, #00e5e6 30%, #00e6e600 20%);
   margin-bottom: 105px;
 }
 
@@ -159,12 +159,15 @@ body {
 .reviews-list {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 93px;
 }
 
 .reviews-item {
   margin-bottom: 114px;
   max-width: 255px;
+  display: flex;
+  align-items: center;
 }
 
 .user {
@@ -176,16 +179,48 @@ body {
     #cc5ec2
   );
   border-radius: 15px;
-  box-shadow: 0 30px 0 -13px #533978, 0 14px 0 -5px #7b54b2;
+  box-shadow: 0 14px 0 -5px #7b54b2, 0 30px 0 -13px #533978;
   padding-top: 49px;
   padding-bottom: 29px;
   padding-right: 14px;
   padding-left: 13px;
 }
 
+.user-text {
+  padding-bottom: 8px;
+}
+
+.user-img {
+  max-width: 31px;
+  display: flex;
+}
+
+.reviews-item:nth-child(2) .user {
+  background-image: linear-gradient(
+    to bottom right,
+    #ff68b4,
+    #ff45e1,
+    #ce3aff,
+    #8961ff
+  );
+  box-shadow: 0 14px 0 -5px #9159b1, 0 30px 0 -13px #61337c;
+}
+
+.reviews-item:nth-child(3) .user {
+  background-image: linear-gradient(
+    to bottom right,
+    #ffe128,
+    #ff9b5c,
+    #ff8381,
+    #ff5489
+  );
+  box-shadow: 0 14px 0 -5px #b95a4c, 0 30px 0 -13px #732f26;
+}
+
 .user-date {
   font-size: 14px;
   color: var(--color-text-line);
+  padding-bottom: 73px;
 }
 
 .user-name {
@@ -237,4 +272,16 @@ body {
 
 .footer {
   background-color: var(--color-bg-footer);
+}
+
+.footer-list {
+  padding-top: 45px;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-bottom: 31px;
+  justify-content: flex-start;
 }
