@@ -185,15 +185,18 @@ body {
   padding-right: 14px;
   padding-left: 13px;
   max-width: 255px;
-  display: flex;
-  align-items: flex-end;
 }
 
 .user-text {
   padding-bottom: 8px;
 }
 
-.user-img {
+.author {
+  display: flex;
+  gap: 5px;
+}
+
+.author-img {
   max-width: 31px;
   display: flex;
 }
@@ -226,11 +229,11 @@ body {
   padding-bottom: 73px;
 }
 
-.user-name {
+.author-name {
   font-size: 14px;
 }
 
-.user-year {
+.author-year {
   font-size: 12px;
   color: var(--color-text-line);
 }
@@ -256,6 +259,11 @@ body {
   padding-bottom: 19px;
 }
 
+.order-button {
+  display: flex;
+  justify-content: center;
+}
+
 .order-input {
   padding: 12px 25px 13px 25px;
   border-radius: 50px;
@@ -277,14 +285,33 @@ body {
   background-color: var(--color-bg-footer);
 }
 
+.footer-info {
+  display: flex;
+  gap: 373px;
+}
+
 .footer-list {
   padding-top: 45px;
 }
 
-.footer-contacts {
+.contacts {
+  padding-bottom: 31px;
+  padding-top: 45px;
+}
+
+.footer-div {
+  display: flex;
+  gap: 724px;
+  padding-bottom: 30px;
+}
+
+.footer-place {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  padding-bottom: 31px;
-  justify-content: flex-start;
+  gap: 5px;
+}
+
+.footer-cr {
+  margin-bottom: -20px;
+  margin-left: -85px;
 }
