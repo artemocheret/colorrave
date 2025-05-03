@@ -69,7 +69,6 @@ body {
   background-image: url(../images/background.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 105px;
 }
 
 .hero-logo {
@@ -112,41 +111,58 @@ body {
 }
 
 .advantages {
-  border: 5px solid var(--color-bg-button);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   background-image: radial-gradient(
-      ellipse at bottom right,
-      #9a76f9 30%,
-      #9976f900 20%
+      circle at bottom right,
+      #00e5e6 5%,
+      #00e6e600 20%
     ),
-    radial-gradient(ellipse at top left, #00e5e6 30%, #00e6e600 20%);
-  margin-bottom: 105px;
+    radial-gradient(circle at top left, #9a76f9 5%, #9976f900 20%);
+  padding-bottom: 105px;
+  background-color: var(--color-bg-footer);
+  padding-top: 105px;
 }
 
 .advantages-list {
   display: flex;
   gap: 145px;
   align-items: center;
+  border: 5px solid var(--color-bg-button);
 }
 
 .advantages-item {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  padding-bottom: 19px;
+  padding-bottom: 25px;
+  padding-top: 25px;
 }
 
 .advantages-item:nth-child(even) .advantages-photo {
   order: -1;
 }
 
+.advantages-item:nth-child(1) {
+  padding-left: 50px;
+}
+
+.advantages-item:nth-child(3) {
+  padding-right: 50px;
+}
+
 .advantages-title {
   font-family: var(--font-family-secondary);
   font-size: 36px;
+  text-align: center;
 }
 
 .reviews {
   border: 2px solid var(--color-text-primary);
+  background-image: url(../images/flowers.png),
+    radial-gradient(circle at bottom right, #00e5e6 5%, #00e6e600 20%);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-color: var(--color-bg-footer);
 }
 
 .reviews-title {
@@ -313,5 +329,5 @@ body {
 
 .footer-cr {
   margin-bottom: -20px;
-  margin-left: -85px;
+  margin-left: -80px;
 }
