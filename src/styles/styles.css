@@ -1,11 +1,13 @@
 :root {
   --color-text-primary: #ffffff;
   --color-text-navigation: #c7c7c7;
-  --color-text-input: #959595;
+  --color-text-field: #959595;
   --color-bg-button: #8e32c6;
   --color-bg-header: #012d63;
   --color-bg-footer: #021635;
-  --color-text-line: #d8d8d8;
+  --color-text-line: #9b9b9b;
+  --color-text-input: #d8d8d8;
+  --color-text-button: #8d8d8d;
   --font-family-primary: "Roboto", sans-serif;
   --font-family-secondary: "Playfair Display", serif;
 }
@@ -108,6 +110,7 @@ body {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   border: 1px solid var(--color-bg-button);
   margin-bottom: 183px;
+  color: var(--color-text-primary);
 }
 
 .advantages {
@@ -125,7 +128,7 @@ body {
 
 .advantages-list {
   display: flex;
-  gap: 145px;
+  gap: 50px;
   align-items: center;
   border: 5px solid var(--color-bg-button);
 }
@@ -150,6 +153,13 @@ body {
   padding-right: 50px;
 }
 
+.advantages-item:nth-child(2) {
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  padding-left: 95px;
+  padding-right: 95px;
+}
+
 .advantages-title {
   font-family: var(--font-family-secondary);
   font-size: 36px;
@@ -170,6 +180,7 @@ body {
   font-family: var(--font-family-secondary);
   text-align: center;
   padding-bottom: 24px;
+  padding-top: 24px;
 }
 
 .reviews-list {
@@ -241,7 +252,7 @@ body {
 
 .user-date {
   font-size: 14px;
-  color: var(--color-text-line);
+  color: var(--color-text-input);
   padding-bottom: 73px;
 }
 
@@ -251,16 +262,16 @@ body {
 
 .author-year {
   font-size: 12px;
-  color: var(--color-text-line);
+  color: var(--color-text-input);
 }
 
 .order {
-  background-image: url(../images/backgroundflower.webp);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url(../images/backgroundflower.webp);
 }
 
 .order-title {
@@ -273,16 +284,33 @@ body {
 
 .order-form {
   padding-bottom: 19px;
-}
-
-.order-button {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  gap: 19px;
 }
 
 .order-input {
+  color: var(--color-text-field);
+}
+
+.order-button {
+  align-self: center;
+  color: var(--color-text-primary);
+}
+
+.order-field {
   padding: 12px 25px 13px 25px;
   border-radius: 50px;
+  background-color: var(--color-text-primary);
+}
+
+.field-button {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-right: 50px;
+  padding-left: 50px;
+  background-color: var(--color-text-primary);
+  color: var(--color-text-button);
 }
 
 .order-button {
@@ -304,6 +332,7 @@ body {
 .footer-info {
   display: flex;
   gap: 373px;
+  border-bottom: 1px solid #9b9b9b;
 }
 
 .footer-list {
@@ -319,6 +348,7 @@ body {
   display: flex;
   gap: 724px;
   padding-bottom: 30px;
+  padding-top: 24px;
 }
 
 .footer-place {
