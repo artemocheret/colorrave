@@ -29,6 +29,10 @@ body {
 
 .header {
   background-color: var(--color-bg-header);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 165px;
+  padding-left: 168px;
 }
 
 .header-container {
@@ -77,6 +81,14 @@ body {
   padding-top: 94px;
 }
 
+.hero-img {
+  width: 160px;
+}
+
+.hero-cr {
+  width: 113px;
+}
+
 .hero-photo {
   margin-top: -15px;
   margin-left: 20px;
@@ -117,10 +129,10 @@ body {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   background-image: radial-gradient(
       circle at bottom right,
-      #00e5e6 5%,
+      rgba(1, 168, 201, 1) 5%,
       #00e6e600 20%
     ),
-    radial-gradient(circle at top left, #9a76f9 5%, #9976f900 20%);
+    radial-gradient(circle at top left, rgba(128, 47, 184, 1) 5%, #9976f900 20%);
   padding-bottom: 105px;
   background-color: var(--color-bg-footer);
   padding-top: 105px;
@@ -167,9 +179,14 @@ body {
 }
 
 .reviews {
-  border: 2px solid var(--color-text-primary);
+  border-top: 2px solid var(--color-text-primary);
+  border-bottom: 2px solid var(--color-text-primary);
   background-image: url(../images/flowers.png),
-    radial-gradient(circle at bottom right, #00e5e6 5%, #00e6e600 20%);
+    radial-gradient(
+      circle at bottom right,
+      rgba(1, 168, 201, 1) 5%,
+      #00e6e600 20%
+    );
   background-position: bottom left;
   background-repeat: no-repeat;
   background-color: var(--color-bg-footer);
@@ -302,6 +319,10 @@ body {
   padding: 12px 25px 13px 25px;
   border-radius: 50px;
   background-color: var(--color-text-primary);
+}
+
+.order-field :nth-child(1) {
+  width: 690px;
 }
 
 .field-button {
