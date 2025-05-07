@@ -75,11 +75,8 @@ body {
   background-image: url(../images/background.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 183px;
-}
-
-.hero-logo {
   padding-top: 94px;
+  padding-bottom: 183px;
 }
 
 .hero-img {
@@ -98,18 +95,18 @@ body {
 .hero-title {
   font-family: var(--font-family-secondary);
   font-size: 144px;
-  padding-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .hero-subtitle {
   font-family: var(--font-family-secondary);
   font-size: 72px;
-  padding-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 .hero-text {
   font-size: 18px;
-  padding-bottom: 41px;
+  margin-bottom: 41px;
   max-width: 508px;
 }
 
@@ -303,11 +300,13 @@ body {
   padding-bottom: 19px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 19px;
 }
 
 .order-input {
   color: var(--color-text-field);
+  font-size: 28px;
 }
 
 .order-button {
@@ -323,6 +322,7 @@ body {
 
 .order-field :nth-child(1) {
   width: 690px;
+  height: 60px;
 }
 
 .field-button {
@@ -332,6 +332,7 @@ body {
   padding-left: 50px;
   background-color: var(--color-text-primary);
   color: var(--color-text-button);
+  font-size: 28px;
 }
 
 .order-button {
