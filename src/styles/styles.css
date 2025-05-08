@@ -95,7 +95,7 @@ body {
 .hero-title {
   font-family: var(--font-family-secondary);
   font-size: 144px;
-  margin-bottom: 60px;
+  line-height: 144px;
 }
 
 .hero-subtitle {
