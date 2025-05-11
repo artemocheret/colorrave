@@ -122,6 +122,16 @@ body {
   color: var(--color-text-primary);
 }
 
+.hero-link:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em white;
+}
+
+.hero-link:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em white;
+}
+
 .advantages {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   background-image: radial-gradient(
@@ -321,6 +331,13 @@ body {
   background-color: var(--color-text-primary);
 }
 
+.order-field:hover,
+.order-field:focus {
+  border: 2px solid #4a9dec;
+  box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+  background-color: white;
+}
+
 .order-field :nth-child(1) {
   width: 690px;
   height: 60px;
@@ -345,6 +362,16 @@ body {
   border-radius: 16px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   border: 1px solid var(--color-bg-button);
+}
+
+.order-button:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em white;
+}
+
+.order-button:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em white;
 }
 
 .footer {
