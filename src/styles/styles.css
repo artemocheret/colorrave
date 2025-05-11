@@ -349,24 +349,24 @@ body {
 
 .footer {
   background-color: var(--color-bg-footer);
+  padding-bottom: 50px;
+  padding-top: 45px;
 }
 
 .footer-info {
   display: flex;
   gap: 373px;
   border-bottom: 1px solid #9b9b9b;
+  padding-bottom: 31px;
 }
 
 .footer-list {
-  padding-top: 45px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
 .contacts {
-  padding-bottom: 31px;
-  padding-top: 45px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -375,7 +375,6 @@ body {
 .footer-div {
   display: flex;
   gap: 724px;
-  padding-bottom: 30px;
   padding-top: 24px;
 }
 
