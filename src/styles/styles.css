@@ -63,8 +63,16 @@ body {
   text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
+.language-link-ua:hover {
+  text-decoration: underline;
+}
+
 .language-link-eng {
   text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.language-link-eng:hover {
+  text-decoration: underline;
 }
 
 .nav-item:hover {
@@ -334,7 +342,7 @@ body {
 .order-field:hover,
 .order-field:focus {
   border: 2px solid #4a9dec;
-  box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+  box-shadow: 0px 0px 0px 7px var(--color-bg-button);
   background-color: white;
 }
 
@@ -391,6 +399,10 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
 }
 
 .contacts {
