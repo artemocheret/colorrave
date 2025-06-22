@@ -349,7 +349,7 @@ body {
 
 .order-field:hover,
 .order-field:focus {
-  border: 2px solid #4a9dec;
+  border: 2px solid white;
   box-shadow: 0px 0px 0px 7px var(--color-bg-button);
   background-color: white;
 }
